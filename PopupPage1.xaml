@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		   xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+		   x:Class="MauiComm_IssuePopupGesture.PopupPage1"
+		   Size="200,200" HorizontalOptions="Center" VerticalOptions="Start">
+
+    <Grid x:Name="gdTest" RowDefinitions="*,44,44,44" SizeChanged="gdTest_SizeChanged" VerticalOptions="Start" HeightRequest="200">
+        <Label Grid.Row="0" Text="This is gesture test." />
+        <Label Grid.Row="1" x:Name="lblTapTimes" Text="Tap Times : 0" />
+        <Button Grid.Row="2" x:Name="btnChangeSize" Text="Size Change" Clicked="btnChangeSize_Clicked" />
+        <Button Grid.Row="3" x:Name="btnClick" Text="Click" Clicked="btnClick_Clicked" />
+    </Grid>
+    
+</toolkit:Popup>
